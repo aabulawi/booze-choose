@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Booze Choose</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="/static/selector.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Booze Choose</h1>
+        </div>
+        <p class="lead">Press the button to get a randomly chosen beer from the local LCBO.</p>
+        <div style="text-align: center" >
+            <button id="beer-select" type="button" class="btn btn-default btn-lg" style="margin-bottom: 30px"><span aria-hidden="true"></span>Random Beer</button>
+            <p>Name: <span id="beer-name"></span></p>
+            <p>Price: <span id="beer-price"></span></p>
+            <p id="suggestion"></p>
+            <img id="beer-pic" src="" class="img-responsive center-block" style="max-height: 400px">
+        </div>
+
+    </div>
+</body>
+</html>
