@@ -15,6 +15,10 @@ $(document).ready(function() {
                 $("#beer-price").text(price_string(data));
                 $("#beer-pic").attr("src",data.image_url);
                 $("#suggestion").text(data.serving_suggestion == null ? "" : data.serving_suggestion);
+                $("#previous-beers").empty();
+                $.each(data.previous, function(index, value){
+                    $("#previous-beers").append("<li>"+parseInt(index+1)+". "+value[1] + " " + value[2]+"</li>");
+                });
         });
     });
 });

@@ -30,6 +30,7 @@ class RandomBeerSelector():
             beers = requests.get(products_url, params).json()
 
     def choose_random_beer(self, blacklist):
+
         while self.available_beers:
             random_choice = random.randint(0,len(self.available_beers)-1)
             random_beer = self.available_beers[random_choice]
